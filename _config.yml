@@ -3,7 +3,7 @@
 
 title: Data Lantip
 url: "https://datalantip.github.io/"
-baseurl:
+baseurl: "https://datalantip.github.io/"
 google_analytics_key:
 disqus_shortname:
 newsletter_action:
@@ -16,14 +16,14 @@ author:
   email:
   twitter: # twitter username without the @ symbol
 social:
-  name: farispriadi
+  name: datalantip
   links:
-    - https://github.com/farispriadi
+    - https://github.com/datalantip
 
 # -----
 # Build
 
-timezone: Etc/UTC
+timezone: Asia/Jakarta
 
 permalink: /:categories/:title/
 
