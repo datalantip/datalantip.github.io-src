@@ -2,8 +2,8 @@
 # Site
 
 title: Data Lantip
-url: "https://datalantip.github.io/"
-baseurl: "https://datalantip.github.io/"
+url: "https://datalantip.github.io"
+baseurl: "https://datalantip.github.io"
 google_analytics_key:
 disqus_shortname:
 newsletter_action:
