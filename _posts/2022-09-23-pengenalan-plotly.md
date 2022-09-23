@@ -1,9 +1,9 @@
 ---
-date: 2017-01-16
-title: Urban
+date: 2022-09-23
+title: Pengenalan Plotly
 categories:
-  - themes
-description: Jekyll template for marketing sites.
+  - 3. visualisasi data
+description: Apa itu Plotly
 type: Document
 ---
 Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server.

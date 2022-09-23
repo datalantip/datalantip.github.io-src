@@ -1,9 +1,9 @@
 ---
-date: 2017-01-16
-title: Cloudflare
+date: 2022-09-23
+title: Pengenalan Python
 categories:
-  - deployment
-description: Deploy your Jekyll site on Cloudflare
+  - 1. python dasar
+description: Apa itu Python
 type: Document
 ---
 Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server.
