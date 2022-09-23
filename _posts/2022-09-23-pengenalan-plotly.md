@@ -2,7 +2,7 @@
 date: 2022-09-23
 title: Pengenalan Plotly
 categories:
-  - 3. visualisasi data
+  - visualisasi-data
 description: Apa itu Plotly
 type: Document
 ---

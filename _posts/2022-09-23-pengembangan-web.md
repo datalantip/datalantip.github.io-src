@@ -2,7 +2,7 @@
 date: 2022-09-23
 title: Belajar Flask
 categories:
-  - 5. Advanced Web Dev
+  - advanced-web-dev
 description: Apa itu Git
 type: Document
 ---

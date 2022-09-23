@@ -2,7 +2,7 @@
 date: 2022-09-23
 title: Pengenalan Python
 categories:
-  - 1. python dasar
+  - python-dasar
 description: Apa itu Python
 type: Document
 ---

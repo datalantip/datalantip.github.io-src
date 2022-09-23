@@ -2,7 +2,7 @@
 date: 2022-09-23
 title: Pengenalan Dash Plotly
 categories:
-  - 4. Web Dashboard
+  - web-dashboard
 description: Apa itu Dash Plotly
 type: Document
 ---
