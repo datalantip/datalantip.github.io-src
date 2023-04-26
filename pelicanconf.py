@@ -2,9 +2,10 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 import os
+import datetime as dt
 
 AUTHOR = 'faris priadi'
-SITENAME = 'aladeve'
+SITENAME = 'Data Lantip - Open Data Untuk Bisnis Anda'
 SITESUBTITLE = "narasi dan data visualization"
 SITEURL = "" #"https://datalantip.github.io" # leave it blank when in localhost
 
@@ -27,7 +28,7 @@ MARKDOWN = {
 
 
 
-
+OUTPUT_PATH: 'datalantip.github.io'
 PLUGIN_PATHS = ["plugins"]
 PLUGINS = [
     "extract_toc",
@@ -101,8 +102,8 @@ USE_SHORTCUT_ICONS = True
 
 # Elegant Labels
 SOCIAL_PROFILE_LABEL = "Stay in Touch"
-RELATED_POSTS_LABEL = "Keep Reading"
-SHARE_POST_INTRO = "Share :"
+RELATED_POSTS_LABEL = "Lanjut Baca"
+SHARE_POST_INTRO = "Bagikan :"
 # COMMENTS_INTRO = "So what do you think? Did I miss something? Is any part unclear? Leave your comments below."
 
 # Email Subscriptions
@@ -124,7 +125,7 @@ TWITTER_USERNAME = "farispriadi"
 # HOSTED_ON = {"name": "Netlify", "url": "https://www.netlify.com/"}
 
 LANDING_PAGE_TITLE = "Melihat Data Dengan Cerita"
-SITE_DESCRIPTION = "tell your research story"
+SITE_DESCRIPTION = "Cerdas mencari peluang dengan Data Terbuka"
 SITE_LOGO = "/theme/images/logo_text_h_white.png"
 FEATURED_IMAGE = "/theme/images/banner.png"
 
@@ -161,3 +162,5 @@ SEO_REPORT = True  # To enable this feature
 SEO_ENHANCER = False  # To disable this feature
 SEO_ENHANCER_OPEN_GRAPH = False # The default value for this feature
 SEO_ENHANCER_TWITTER_CARDS = False # The default value for this feature
+
+YEARNOW = dt.datetime.now().strftime("%Y")

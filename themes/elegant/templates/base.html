@@ -12,6 +12,7 @@
         <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/navbar-static/">
         <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/bootstrap.min.css">
         <link href="https://getbootstrap.com/docs/4.0/examples/navbar-static/navbar-top.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         
         {% endif %}
         {% endblock head_links %}
@@ -65,20 +66,25 @@
               <div class="collapse navbar-collapse" id="navbarCollapse">
 
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item"><a href="{{ SITEURL }}/" class="nav-link">Home</a></li>
+                    <!-- <li class="nav-item"><a href="{{ SITEURL }}/" class="nav-link">Home</a></li> -->
                     {% if DISPLAY_PAGES_ON_MENU %}
                     {% for p in pages %}
                     <li {% if p == page %} class="nav-item"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}" class="nav-link">{{ p.title }}</a></li>
                     {% endfor %}
                     {% endif %}
-                    <li class="nav-item"><a href="{{ SITEURL }}/about" class="nav-link">About</a></li>
+                    
 
                     {% from '_includes/_defaults.html' import TAGS_URL, CATEGORIES_URL, ARCHIVES_URL, SEARCH_URL with context %}
-                    <li {% if page_name == 'archives' %} class="nav-item"{% endif %}><a href="{{ SITEURL }}/{{ ARCHIVES_URL }}" class="nav-link">Blog</a></li>
-                    <!-- <li {% if page_name == 'categories' %} class="nav-item"{% endif %}><a href="{{ SITEURL }}/{{ CATEGORIES_URL }}" class="nav-link">Categories</a></li> -->
-                    <!-- <li class="nav-item"><a href="{{ SITEURL }}/tutorial" class="nav-link">Tutorial</a></li> -->
+                    <li {% if page_name == 'archives' %} class="nav-item"{% endif %}><a href="{{ SITEURL }}/{{ ARCHIVES_URL }}" class="nav-link">Explore</a></li>
+
+                    <li {% if page_name == 'categories' %} class="nav-item"{% endif %}><a href="{{ SITEURL }}/{{ CATEGORIES_URL }}" class="nav-link">Topics</a></li>
+
+                    <li class="nav-item"><a href="{{ SITEURL }}/about" class="nav-link">About</a></li>
+                    
                     <li class="nav-item"><a href="{{ SITEURL }}/contact" class="nav-link">Contact</a></li>
+                    {% if page or article or page_name in ['archives','categories','tags']  %}
                     <li class="nav-item"><form class="navbar-search" action="{{ SITEURL }}/{{ SEARCH_URL }}" onsubmit="return validateForm(this.elements['q'].value);"> <input type="text"  placeholder="Search" name="q" id="tipue_search_input"></form></li>
+                    {% endif %}
                 </ul>
               </div>
             </nav>

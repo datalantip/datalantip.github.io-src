@@ -1,7 +1,7 @@
 {% if article.related_posts %}
 {% from '_includes/_defaults.html' import RELATED_POSTS_LABEL with context %}
 <section>
-    <h2>{{ RELATED_POSTS_LABEL }}</h2>
+    <h5>{{ RELATED_POSTS_LABEL }}</h5>
 <ul class="related-posts-list">
 {% for related_post in article.related_posts|sort(attribute = 'date') %}
     {% set v_title = related_post.title|striptags %}

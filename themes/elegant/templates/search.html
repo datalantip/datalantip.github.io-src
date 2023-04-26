@@ -5,7 +5,7 @@ Search · {{ super() }}
 {% endblock title %}
 
 {% block head_description %}
-Search results for {{ SITENAME|striptags|e }} blog.
+Hasil pencarian untuk {{ SITENAME|striptags|e }} blog.
 {% endblock head_description %}
 
 {% block meta_tags_in_head %}
@@ -14,8 +14,8 @@ Search results for {{ SITENAME|striptags|e }} blog.
 <meta property="og:title" content="Search · {{ SITENAME|striptags|e }}"/>
 <meta name="twitter:title" content="Search · {{ SITENAME|striptags|e }}">
 <meta property="og:url" content="{{ SITEURL }}/{{ SEARCH_URL }}" />
-<meta property="og:description" content="Search results for {{ SITENAME|striptags|e }} blog" />
-<meta name="twitter:description" content="Search results for {{ SITENAME|striptags|e }} blog">
+<meta property="og:description" content="Hasil pencarian untuk {{ SITENAME|striptags|e }} blog" />
+<meta name="twitter:description" content="Hasil pencarian untuk {{ SITENAME|striptags|e }} blog">
 <meta property="og:site_name" content="{{ SITENAME|striptags|e }}" />
 <meta property="og:article:author" content="{{ AUTHOR }}" />
 {% if FEATURED_IMAGE %}
@@ -36,7 +36,7 @@ Search results for {{ SITENAME|striptags|e }} blog.
         </div>
     </div>
 </div>
-{% endblock content %}
+{% endblock content %}f
 
 {% block script %}
     <script src="{{ SITEURL }}/tipuesearch_content.js"></script>

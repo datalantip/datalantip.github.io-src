@@ -84,6 +84,7 @@
             {{ share_links(article) }}
             {% from '_includes/article_author.html' import article_author with context %}
             {{ article_author(article) }}
+            {% include '_includes/social_links.html' %}
             {% from '_includes/comments.html' import comments_section with context %}
             {{ comments_section(article) }}
             <hr/>
@@ -126,7 +127,7 @@
             
             {% if article.tags and article.tags[0]|trim|count > 0 %}
             {% from '_includes/_defaults.html' import TAGS_URL with context %}
-            <h4>Tags</h4>
+            <h5>Tags</h5>
             <ul class="list-of-tags tags-in-article">
                 {% for tag in article.tags|sort %}
                 <li><a href="{{ SITEURL }}/{{ TAGS_URL }}#{{ tag.slug }}-ref">{{ tag }}
@@ -136,7 +137,7 @@
                 {% endfor %}
             </ul>
             {% endif %}
-            {% include '_includes/social_links.html' %}
+            
             {% from '_includes/mailchimp.html' import mailchimp with context %}
             {{ mailchimp(article) }}
             {% from '_includes/freelists.html' import freelists with context %}

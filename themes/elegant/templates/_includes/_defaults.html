@@ -250,3 +250,10 @@ PROJECTS = [{
 {% else %}
 {% set PLUGINS = PLUGINS %}
 {% endif %}
+
+{# It is displayed along with the SITENAME in the footer of every page #}
+{% if not YEARNOW %}
+{% set YEARNOW = '' %}
+{% else %}
+{% set YEARNOW = YEARNOW %}
+{% endif %}

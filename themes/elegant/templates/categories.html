@@ -1,21 +1,21 @@
 {% extends 'base.html' %}
 
 {% block title %}
-Telusuri Kategori · {{ super() }}
+Telusuri Topik · {{ super() }}
 {% endblock title %}
 
 {% block head_description %}
-Telusuri Kategori of the {{ SITENAME|striptags|e }} blog.
+Telusuri Topik of the {{ SITENAME|striptags|e }} blog.
 {% endblock head_description %}
 
 {% block meta_tags_in_head %}
 {{ super() }}
 {% from '_includes/_defaults.html' import FEATURED_IMAGE, CATEGORIES_URL with context %}
-<meta property="og:title" content="Telusuri Kategori · {{ SITENAME|striptags|e }}"/>
-<meta name="twitter:title" content="Telusuri Kategori · {{ SITENAME|striptags|e }}">
+<meta property="og:title" content="Telusuri Topik · {{ SITENAME|striptags|e }}"/>
+<meta name="twitter:title" content="Telusuri Topik · {{ SITENAME|striptags|e }}">
 <meta property="og:url" content="{{ SITEURL }}/{{ CATEGORIES_URL }}" />
-<meta property="og:description" content="Telusuri Kategori of the {{ SITENAME|striptags|e }} blog" />
-<meta name="twitter:description" content="Telusuri Kategori of the {{ SITENAME|striptags|e }} blog">
+<meta property="og:description" content="Telusuri Topik of the {{ SITENAME|striptags|e }} blog" />
+<meta name="twitter:description" content="Telusuri Topik of the {{ SITENAME|striptags|e }} blog">
 <meta property="og:site_name" content="{{ SITENAME|striptags|e }}" />
 <meta property="og:article:author" content="{{ AUTHOR }}" />
 {% if FEATURED_IMAGE %}
@@ -33,7 +33,7 @@ Telusuri Kategori of the {{ SITENAME|striptags|e }} blog.
 {% from '_includes/_defaults.html' import CATEGORIES_URL with context %}
 <div class="row-fluid">
     <header class="page-header span10 offset2">
-    <h1><a href="{{ SITEURL }}/{{ CATEGORIES_URL }}" class="category-link">Telusuri Kategori</a></h1>
+    <h1><a href="{{ SITEURL }}/{{ CATEGORIES_URL }}" class="category-link">Telusuri Topik</a></h1>
     </header>
 </div>
 

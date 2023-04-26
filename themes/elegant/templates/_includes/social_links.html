@@ -1,6 +1,5 @@
 {% if SOCIAL %}
 {% from '_includes/_defaults.html' import SOCIAL_PROFILE_LABEL with context %}
-<h5>{{ SOCIAL_PROFILE_LABEL }}</h5>
 <div id="sidebar-social-link">
     {% for entry in SOCIAL %}
     {% if entry[0]|lower == 'email' %}

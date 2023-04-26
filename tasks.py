@@ -45,7 +45,7 @@ def build(c):
     """Build local version of site"""
     c.run('python generate_markdown.py')
     pelican_run('-s {settings_base}'.format(**CONFIG))
-    c.run('touch output/CNAME && echo "aladeve.com" > output/CNAME')
+    c.run('touch output/CNAME && echo "datalantip.github.io" > output/CNAME')
 
 @task
 def rebuild(c):
@@ -133,7 +133,7 @@ def livereload(c):
 def publish(c):
     """Publish to GitHub Pages"""
     preview(c)
-    c.run('touch output/CNAME && echo "aladeve.com" > output/CNAME')
+    c.run('touch output/CNAME && echo "datalantip.github.io" > output/CNAME')
     c.run('ghp-import -b {github_pages_branch} '
           '-m {commit_message} '
           '{deploy_path} -p'.format(**CONFIG))
